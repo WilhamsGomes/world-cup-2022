@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/navBar.css">
+    <link rel="stylesheet" href="./src/css/initial.css">
+    <link rel="stylesheet" href="./src/css/battle.css">
+    <title>World Cup Football 2022</title>
+</head>
+<body>
+
+    <header id="header">
+        <nav class="navBar">
+            <img src="/src/img/2022_FIFA_World_Cup.svg.png" width="60">
+            <ul>
+                <li class="estilo">Home</li>
+                <li class="estilo">Numbers</li>
+                <li class="estilo">Teams</li>
+                <li class="estilo">Finally</li>
+            </ul>
+            <input placeholder="Search">
+        </nav>
+    </header>
+
+    <section class="initial">
+        <div class="textPrimary">
+            <p>Competition comes to an end</p>
+            <h1>Fifa World Cup Qatar 2022</h1>
+            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </span>
+            <button>Get Started</button>
+        </div>
+        <div class="playersImg">
+            <img src="./src/img/Marrocos.png" alt="Lionel Messi" width="500"> 
+        </div>
+    </section>
+
+    <section class="battle">
+        <h1>The final battle</h1>
+        <div id="cards-teams">
+
+            <div class="flip" id="cartas">
+                <div class="face" id="front">
+                    <img src="./src/img/Messi.png" width="300">
+                </div>
+                <div class="face" id="back">
+                    <p>Jogadores</p>
+                </div>
+            </div>
+
+            <span>vs</span>
+
+            <div class="flip2" id="cartas2">
+                <div class="face2" id="front2">
+                    <img src="./src/img/Messi.png" width="300">
+                </div>
+                <div class="face2" id="back2">
+                    <p>Jogadores</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        const card = document.querySelector("#cartas")
+        card.addEventListener("mouseover", () => {
+            card.classList.toggle("flip")
+        })
+
+        const card2 = document.querySelector("#cartas2")
+        card2.addEventListener("mouseover", () => {
+            card2.classList.toggle("flip2")
+        })
+    </script>
+
+</body>
+</html>

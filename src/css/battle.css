@@ -1,0 +1,59 @@
+.battle{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.battle h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #F2EEE9;
+}
+
+/**/
+#cards-teams{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    width: 550px;
+}
+
+#cartas, #cartas2{
+    display: flex;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transition: all .5s;
+    height: 350px;
+}
+
+.face, .face2{
+    width: 250px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    border-radius: 15px;
+}
+
+#front, #front2{
+    background-color: #FF004F;
+    transform: rotateY(180deg);
+}
+
+#front img, #front2 img{
+    width: 100%;
+}
+
+#back, #back2{
+    background-color: #FF004F;
+    backface-visibility: hidden; 
+}
+
+.flip, .flip2{
+    transform: rotateY(180deg);
+}

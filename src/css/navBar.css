@@ -1,0 +1,38 @@
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.navBar ul{
+    display: flex;
+}
+
+li{
+    margin: 20px;
+    color: #F2EEE9;
+    font-weight: bold;
+}
+
+li:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 1.5s;
+}
+
+.navBar input{
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    background-color: #F2EEE9;
+    font-weight: bold;
+}
+
+.icon {
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
