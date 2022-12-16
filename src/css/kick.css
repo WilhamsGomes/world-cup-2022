@@ -1,0 +1,62 @@
+#kick{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+#kick h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #F2EEE9;
+}
+
+#kick button{
+    width: 120px;
+    height: 40px;
+    margin: 20px 0px 40px 0px;
+    border: none;
+    border-radius: 25px;
+    background-color: #FF004F;
+    color: #F2EEE9;
+    font-weight: bold;
+}
+
+#kick button:hover{
+    cursor: pointer;
+}
+
+.resultFinish{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultFinish span{
+    margin: 20px;
+    font-size: 25px;
+    color: #fff;
+}
+
+.argentina{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.argentina label{
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #F2EEE9;
+    font-size: 2rem;
+    color: #FF004F;
+    border-radius: 15px;
+}
+
+#value_argentina{
+    margin: 20px;
+}
+

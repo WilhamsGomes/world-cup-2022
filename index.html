@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="./src/css/initial.css">
     <link rel="stylesheet" href="./src/css/battle.css">
     <link rel="stylesheet" href="./src/css/numbers.css">
+    <link rel="stylesheet" href="./src/css/kick.css">
+    <link rel="stylesheet" href="./src/css/footer.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>World Cup Football 2022</title>
 </head>
 <body>
@@ -28,7 +31,7 @@
     </header>
 
     <section class="initial">
-        <div class="textPrimary">
+        <div class="textPrimary" data-aos="fade-right">
             <p>Competition comes to an end</p>
             <h1>Fifa World Cup Qatar 2022</h1>
             <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </span>
@@ -96,13 +99,53 @@
         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjO-lnxkfDRwIpw6dsmmuU2zkJcQN8Xfr-hO17IRPDH2KZzJ4SBhXMIvfAvAKcpbW3_Aff3maGAqkuOSFfxvTCFZosmXB09hSNUldtX9bgHV7qhrcxAsRoNA8cAaxpEAcWRxFdNOSjYdbvQc8eRA7x-sXrhakvOAA0jZdPpfWjvTZ17CCWHN_pmP397_A/s300/laeb.png" alt="Mascote Copa do Mundo 2022"  width="200" id="img-mascote02"/>
     </div>
    
-
     <section>
         <div class="numbers">
-            <p>Teste</p>
+            <img src="https://www.jefebet.com/wp-content/uploads/2022/10/2022-fifa-world-cup.png.webp" alt="taça copa do mundo" width="300">
+            <div class="dados-graph">
+                <span>64</span>
+                <p>Matches played between national teams from all continents.</p>
+            </div>
+            <div class="dados-graph">
+                <span>+150</span>
+                <p>Goals scored throughout the competition.</p>
+            </div>
+            <div class="dados-graph">
+                <span>∞</span>
+                <p>Emotions daily around the world</p>
+            </div>
         </div>
     </section>
 
+    <section id="kick">
+        <h1>My kick</h1>
+        <div class="resultFinish">
+            <div class="argentina">
+                <img src="./src/img/Afa_logo.svg.png" width="80px">
+                <label id="value_argentina"> </label>
+            </div>
+            <span>x</span>
+            <div class="argentina">
+                <label id="value_argentina"> </label>
+                <img src="./src/img/fff_logo.png" width="60px">
+            </div>
+        </div>
+        <button>Generate result</button>
+    </section>
+
+    <footer id="footer">
+        <p>Created by Wilhams Gomes &#169 wilhamsgoomes@gmail.com</p>
+        <div>
+            <a href="https://www.linkedin.com/in/wilhamsgomes/" target="_blank">Linkedin</a>
+            |
+            <a href="https://github.com/WilhamsGomes" target="_blank">GitHub</a>
+        </div>
+    </footer>
+
     <script src="./src/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

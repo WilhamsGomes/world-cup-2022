@@ -1,5 +1,40 @@
 .numbers{
-    margin-top: 40px;
-    height: 350px;
-    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 180px;
+    width: 80%;
+    margin: 0 auto;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.numbers img{
+    background-size: cover;
+    width: auto;
+	height: 100%;
+}
+
+.dados-graph{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.dados-graph span{
+    font-weight: bold;
+    font-size: 5.5rem;
+    color: #F2EEE9;
+}
+
+.dados-graph p{
+    font-size: 0.8rem;
+    color: #F2EEE9;
+    opacity: 0.7;
 }
