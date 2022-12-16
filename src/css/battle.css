@@ -21,6 +21,10 @@
     width: 550px;
 }
 
+.vs-battle{
+    color: #fff;
+}
+
 #cartas, #cartas2{
     display: flex;
     justify-content: center;
@@ -45,6 +49,22 @@
     transform: rotateY(180deg);
 }
 
+#front::before, #front2::before{
+    content: '';
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.20;
+    background-image: url("https://mir-s3-cdn-cf.behance.net/projects/404/fe6e49157705225.Y3JvcCwxNTk4LDEyNDksMCww.png");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    z-index: -10;
+}
+
 #front img, #front2 img{
     width: 100%;
 }
@@ -52,8 +72,64 @@
 #back, #back2{
     background-color: #FF004F;
     backface-visibility: hidden; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .flip, .flip2{
     transform: rotateY(180deg);
+}
+
+.playersTeam{
+    text-align: justify;
+    margin: 0px 20px 0px 20px;
+}
+
+.playersTeam span{
+    color: yellow;
+}
+
+.playersTeam p{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+#front2 img{
+    width: 200px !important;
+}
+
+#img-mascote{
+    position: absolute;
+    left: 50px;
+    animation: rotate 5s linear infinite;
+}
+
+
+@keyframes rotate {
+    0%{
+       margin-top: 0px;
+    }
+
+    25%{
+        margin-top: 100px;
+    }
+
+    50%{
+        margin-top: 200px;
+    }
+
+    75%{
+        margin-top: 100px;
+    }
+
+    100%{
+        margin-top: 0px;
+    }
+}
+
+#img-mascote02{
+    margin-top: -350px;
+    margin-right: 150px;
+    float: right;
 }

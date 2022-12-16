@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./src/css/navBar.css">
     <link rel="stylesheet" href="./src/css/initial.css">
     <link rel="stylesheet" href="./src/css/battle.css">
+    <link rel="stylesheet" href="./src/css/numbers.css">
     <title>World Cup Football 2022</title>
 </head>
 <body>
@@ -18,7 +19,7 @@
             <img src="/src/img/2022_FIFA_World_Cup.svg.png" width="60">
             <ul>
                 <li class="estilo">Home</li>
-                <li class="estilo">Numbers</li>
+                <li class="estilo">Battle</li>
                 <li class="estilo">Teams</li>
                 <li class="estilo">Finally</li>
             </ul>
@@ -38,44 +39,70 @@
         </div>
     </section>
 
+    <div>
+        <img src="https://www.qatar2022.qa/sites/default/files/styles/1440x815/public/2022-11/b.png?h=39b94f55&itok=tpta4wnd" alt="Mascote Copa do Mundo 2022" width="300" id="img-mascote"/>
+    </div>
+
     <section class="battle">
         <h1>The final battle</h1>
         <div id="cards-teams">
-
+     
             <div class="flip" id="cartas">
                 <div class="face" id="front">
                     <img src="./src/img/Messi.png" width="300">
                 </div>
                 <div class="face" id="back">
-                    <p>Jogadores</p>
+                    <div>
+                        <img src="./src/img/Afa_logo.svg.png" width="50">
+                    </div>
+                    <div class="playersTeam">
+                        <p> <span>Goleiros:</span> Emiliano Martínez, Franco Armani e Gerónimo Rulli</p>
+
+                        <p> <span>Defensores:</span> Nahuel Molina, Gonzalo Montiel, Cristian Romero, Germán Pezzella, Nicolás Otamendi , Lisandro Martínez, Marcos Acuña, Nicolás Tagliafico y Juan Foyth</p>
+
+                        <p> <span>Meio-campistas:</span>  Rodrigo De Paul, Leandro Paredes, Alexis Mac Allister, Guido Rodríguez, Alejandro Gómez, Enzo Fernández e Exequiel Palacios </p>
+
+                        <p> <span>Atacantes:</span> Lionel Messi, Lautaro Martínez, Ángel Di María, Julián Álvarez, Paulo Dybala, Nicolás González e Joaquín Correa </p>
+                    </div>
                 </div>
             </div>
 
-            <span>vs</span>
+            <span class="vs-battle">vs</span>
 
             <div class="flip2" id="cartas2">
                 <div class="face2" id="front2">
-                    <img src="./src/img/Messi.png" width="300">
+                    <img src="./src/img/Mbappe.png" width="300">
                 </div>
                 <div class="face2" id="back2">
-                    <p>Jogadores</p>
+                    <div>
+                        <img src="./src/img/fff_logo.png" width="40">
+                    </div>
+                    <div class="playersTeam">
+                        <p> <span>Goleiros:</span> Lloris, Areola e Mandanda</p>
+
+                        <p> <span>Defensores:</span> Pavard, Konaté, Koundé, Varane, Disansi, Saliba, Lucas Hernandéz, Theo Hernandez e Upamecano</p>
+
+                        <p> <span>Meio-campistas:</span> Camavinga, Rabiot, Tchouaméni, Youssouf Fofana, Guendouzi e Veretout </p>
+
+                        <p> <span>Atacantes:</span> Coman , Marcus Thuram, Mbappé, Karim Benzema, Giroud, Griezmann, Dembélé e Kolo Muani </p>
+                    </div>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <script>
-        const card = document.querySelector("#cartas")
-        card.addEventListener("mouseover", () => {
-            card.classList.toggle("flip")
-        })
+    <div>
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjO-lnxkfDRwIpw6dsmmuU2zkJcQN8Xfr-hO17IRPDH2KZzJ4SBhXMIvfAvAKcpbW3_Aff3maGAqkuOSFfxvTCFZosmXB09hSNUldtX9bgHV7qhrcxAsRoNA8cAaxpEAcWRxFdNOSjYdbvQc8eRA7x-sXrhakvOAA0jZdPpfWjvTZ17CCWHN_pmP397_A/s300/laeb.png" alt="Mascote Copa do Mundo 2022"  width="200" id="img-mascote02"/>
+    </div>
+   
 
-        const card2 = document.querySelector("#cartas2")
-        card2.addEventListener("mouseover", () => {
-            card2.classList.toggle("flip2")
-        })
-    </script>
+    <section>
+        <div class="numbers">
+            <p>Teste</p>
+        </div>
+    </section>
 
+    <script src="./src/script.js"></script>
 </body>
 </html>
