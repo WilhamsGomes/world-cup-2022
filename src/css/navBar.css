@@ -36,3 +36,9 @@ li:hover{
     min-width: 50px;
     text-align: center;
 }
+
+@media screen and (max-width: 590px){
+    .navBar input{
+       display: none;
+    }
+}

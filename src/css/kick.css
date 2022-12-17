@@ -39,13 +39,13 @@
     color: #fff;
 }
 
-.argentina{
+.argentina, .franca{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.argentina label{
+.argentina label, .franca label{
     width: 45px;
     height: 45px;
     text-align: center;
@@ -56,7 +56,21 @@
     border-radius: 15px;
 }
 
-#value_argentina{
+#value_argentina, #value_franca{
     margin: 20px;
 }
 
+@media screen and (max-width: 300px){
+
+    .resultFinish span{
+        margin: 0px;
+    }
+    .argentina img, .franca img{
+        width: 40px;
+    }
+    .argentina label, .franca label{
+        width: 30px;
+        height: 30px;
+        font-size: 1.5rem;
+    }
+}

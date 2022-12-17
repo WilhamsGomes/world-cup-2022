@@ -38,3 +38,32 @@
     color: #F2EEE9;
     opacity: 0.7;
 }
+
+@media screen and (max-width: 900px){
+    .numbers{
+        flex-wrap: wrap;
+        min-height: 380px;
+        padding: 20px;
+    }
+    .numbers img{
+        background-size: cover;
+        width: auto;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .numbers{
+        flex-wrap: wrap;
+        justify-content: center;
+        min-height: 880px;
+        padding: 20px;
+    }
+    .numbers img{
+        height: 30%;
+    }
+    .dados-graph{
+        width: 250px;
+        align-items: center;
+    }
+}

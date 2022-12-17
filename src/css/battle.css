@@ -134,3 +134,16 @@
     margin-right: 150px;
     float: right;
 }
+
+@media screen and (max-width: 660px){
+
+    #cards-teams{
+        flex-direction: column;
+    }
+    #img-mascote, #img-mascote02{
+        display: none;
+    }
+    .battle h1{
+        font-size: 2rem;
+    }
+}
