@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./src/css/numbers.css">
     <link rel="stylesheet" href="./src/css/kick.css">
     <link rel="stylesheet" href="./src/css/footer.css">
+    <link rel="icon" type="image/x-icon" href="./src/img/2022_FIFA_World_Cup.svg.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>World Cup Football 2022</title>
 </head>
@@ -19,26 +20,26 @@
 
     <header id="header">
         <nav class="navBar">
-            <img src="/src/img/2022_FIFA_World_Cup.svg.png" width="60">
+            <img src="/src/img/2022_FIFA_World_Cup.svg.png" width="60" alt="logo-copa-do-mundo">
             <ul>
-                <li class="estilo">Home</li>
-                <li class="estilo">Battle</li>
-                <li class="estilo">Teams</li>
-                <li class="estilo">Finally</li>
+                <a href="#home">  <li class="estilo">Home</li> </a>
+                <a href="#battle0">  <li class="estilo">Battle</li> </a>
+                <a href="#number"> <li class="estilo">Numbers</li> </a>
+                <a href="#kick"> <li class="estilo">Guess</li> </a>
             </ul>
             <input placeholder="Search">
         </nav>
     </header>
 
-    <section class="initial">
+    <section class="initial" id="home">
         <div class="textPrimary" data-aos="fade-right" data-aos-duration="2500">
             <p>Competition comes to an end</p>
             <h1>Fifa World Cup Qatar 2022</h1>
-            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </span>
-            <button>Get Started</button>
+            <span>After billions of people around the world tuned in to 63 games over one month, the curtain is set to come down on the Qatar 2022 FIFA World Cup. As expected, a lavish closing ceremony will follow. The FIFA World Cup closing ceremony will take place on Sunday, December 18, the day of the tournament’s final game.</span>
+            
         </div>
         <div class="playersImg" data-aos="fade-left" data-aos-duration="2500">
-            <img src="./src/img/Marrocos.png" alt="Lionel Messi" width="500"> 
+            <img src="./src/img/imgInicial.png" alt="Destaques da Copa" width="500"> 
         </div>
     </section>
 
@@ -46,14 +47,14 @@
         <img src="https://www.qatar2022.qa/sites/default/files/styles/1440x815/public/2022-11/b.png?h=39b94f55&itok=tpta4wnd" alt="Mascote Copa do Mundo 2022" width="300" id="img-mascote"/>
     </div>
 
-    <section class="battle">
+    <section class="battle" id="battle0">
         <h1>The final battle</h1>
         <div id="cards-teams">
      
             <div  data-aos="fade-right" data-aos-duration="2500">
                 <div class="flip" id="cartas">
                     <div class="face" id="front">
-                        <img src="./src/img/Messi.png" width="300">
+                        <img src="./src/img/Messi.png" alt="Foto Lionel Messi" width="300">
                     </div>
                     <div class="face" id="back">
                         <div>
@@ -77,7 +78,7 @@
             <div data-aos="fade-left" data-aos-duration="2500">
                 <div class="flip2" id="cartas2">
                     <div class="face2" id="front2">
-                        <img src="./src/img/Mbappe.png" width="300">
+                        <img src="./src/img/Mbappe.png" alt="Foto Mbappé" width="300">
                     </div>
                     <div class="face2" id="back2">
                         <div>
@@ -103,7 +104,7 @@
         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjO-lnxkfDRwIpw6dsmmuU2zkJcQN8Xfr-hO17IRPDH2KZzJ4SBhXMIvfAvAKcpbW3_Aff3maGAqkuOSFfxvTCFZosmXB09hSNUldtX9bgHV7qhrcxAsRoNA8cAaxpEAcWRxFdNOSjYdbvQc8eRA7x-sXrhakvOAA0jZdPpfWjvTZ17CCWHN_pmP397_A/s300/laeb.png" alt="Mascote Copa do Mundo 2022"  width="200" id="img-mascote02"/>
     </div>
    
-    <section>
+    <section id="number">
         <div class="numbers">
             <img src="https://www.jefebet.com/wp-content/uploads/2022/10/2022-fifa-world-cup.png.webp" alt="taça copa do mundo" width="300">
             <div class="dados-graph">
@@ -122,16 +123,16 @@
     </section>
 
     <section id="kick">
-        <h1>My kick</h1>
+        <h1>My guess</h1>
         <div class="resultFinish">
             <div class="argentina" data-aos="fade-right" data-aos-duration="2500">
-                <img src="./src/img/Afa_logo.svg.png" width="80px">
+                <img src="./src/img/Afa_logo.svg.png" width="80px" alt="afa-logo">
                 <label id="value_argentina"></label>
             </div>
             <span>x</span>
             <div class="franca" data-aos="fade-left" data-aos-duration="2500">
                 <label id="value_franca"></label>
-                <img src="./src/img/fff_logo.png" width="60px">
+                <img src="./src/img/fff_logo.png" width="60px" alt="fff-logo">
             </div>
         </div>
         <button onclick="gerarResult()">Generate result</button>

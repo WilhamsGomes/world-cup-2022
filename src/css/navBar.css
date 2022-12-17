@@ -37,8 +37,18 @@ li:hover{
     text-align: center;
 }
 
-@media screen and (max-width: 590px){
+@media screen and (max-width: 750px){
+
     .navBar input{
        display: none;
     }
+
+    .navBar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    
 }

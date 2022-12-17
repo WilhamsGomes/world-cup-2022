@@ -3,7 +3,7 @@
 body{
     background-color: #7B102F;
     font-family: 'Roboto';
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 #header:before{

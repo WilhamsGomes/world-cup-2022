@@ -15,3 +15,15 @@
 #footer a{
     color: #000;
 }
+
+#footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px){
+    #footer p, #footer a{
+        font-size: 12px;
+    }
+}
